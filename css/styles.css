@@ -20,6 +20,10 @@ header {
     font-size: 1.5rem;
 }
 
+form {
+    background: transparent;
+}
+
 header, form {
     min-height: 20vh;
     display: flex;
@@ -28,15 +32,16 @@ header, form {
 }
 
 form input, form button {
-    padding: 0.5rem;
-    font-size: 2rem;
-    border: transparent;
+    padding: 10px;
+    font-size: 32px;
+    border: none;
     background: white;
 }
 
 form input {
     border-radius: 5px 0 0 5px;
     z-index: 1;
+
 }
 form input:focus {
     outline: #d7b1b8 solid 3px;
@@ -116,4 +121,42 @@ form button:hover {
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+select {
+    color: #99cccc;
+    background: white;
+    width: 190px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    color: #99cccc;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    padding: 15px;
+}
+.select:hover::after {
+    background: #99cccc;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.3s ease;
 }
