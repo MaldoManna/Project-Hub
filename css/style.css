@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Calibri', sans-serif ;
+}
+
+body {
+    background: #282c34;
+    /*color: gainsboro;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container {
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    margin: 100px;
+    border: transparent solid thin;
+    border-radius: 10px;
+}
+
+.container a {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.container a:active {
+    filter: brightness(150%);
+}
+.container .Todo img {
+    border-radius: 10px;
+}
+
+.container .Todo {
+    border: transparent solid thin;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+.container .Todo:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+.container .Todo:active {
+    background: gray;
+}
